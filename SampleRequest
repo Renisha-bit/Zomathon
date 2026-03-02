@@ -1,0 +1,25 @@
+{
+  "metadata": {
+    "user_id": "UX_9821",
+    "city": "Mumbai",
+    "time_slot": "21:30", // Late night context
+    "device": "android"
+  },
+  "cart_state": {
+    "items": ["101_double_cheese_burger"],
+    "total_value": 350.00,
+    "cuisine": "American"
+  },
+  "candidates_count": 50 
+}
+
+// output 
+{
+  "request_id": "req_5521",
+  "latency_ms": 142, // Well within the 300ms limit
+  "recommendations": [
+    {"item_id": "502_peri_peri_fries", "score": 0.98, "reason": "Complementary"},
+    {"item_id": "901_coke_330ml", "score": 0.85, "reason": "Meal Completion"},
+    {"item_id": "772_choco_lava_cake", "score": 0.72, "reason": "Late Night Sweet"}
+  ]
+}
